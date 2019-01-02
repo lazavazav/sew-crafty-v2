@@ -1,0 +1,139 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.imgcont {
+    position: relative;
+    color: rgb(104, 108, 112);
+}
+
+h6.prodlbl {
+    position: absolute;
+    bottom: 8px;
+    left: 30px;
+    background-color: aqua;
+}
+
+/* form styling */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+  
+  legend {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    color: #c80060;
+    font-size: 1.2em;
+  }
+  label {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+  }
+  
+  .labeltext {
+    font-weight: bold;
+    margin-top: 1em;
+    display: block;
+  }
+  
+  input {
+    display: block;
+    width: 20em;
+  }
+
+textarea {
+    display: block;
+    width: 25em;
+    height: 15em;
+    margin-bottom: 1em;
+  }
+  button, .button {
+    margin-bottom: 2em;
+    background-color: #9fb2b9;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Niconne', cursive;
+    padding: 0.2em 0.5em;
+  }
+  button:hover, .button:hover {
+    background-color: rgb(68, 148, 223);
+  }
+
+  footer {
+    background-color: #00CDD1;
+    color: white;
+    clear: both;
+    margin: 0 0.5em 3em 0.5em;
+  }
+  footer p {
+    text-align: center;
+  }
+  footer img {
+    width: 52px;
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+
+  @media (min-width: 1px) {
+      .background {
+          background: url(img/beginners-sewing-projects-300.jpg) no-repeat;
+          background-position: center;
+          background-size: cover;
+          height: 50px;
+      }
+      #description {
+        color: rgb(22, 21, 21);
+        padding-top: 14px;
+        text-align: center;
+        font-family: 'Merienda', cursive;
+        font-size: 10px;
+      }
+      .transbox {
+        background-color: #ffffff;
+        opacity: 0.6;
+        filter: alpha(opacity=60); 
+        height: 50px; 
+      }
+  }
+
+  @media (min-width: 576px) {
+    .background {
+        background: url(img/beginners-sewing-projects-600x280.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+    }
+    #description {
+        color: rgb(48, 2, 2);
+        padding-top: 80px;
+        text-align: center;
+        font-family: 'Merienda', cursive;
+        font-size: 23px;
+      }
+      .transbox {
+        background-color: #ffffff;
+        opacity: 0.6;
+        filter: alpha(opacity=60); 
+        height: 200px; 
+      }
+}
+
